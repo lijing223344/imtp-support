@@ -30,7 +30,9 @@
       <h2>保存在这台设备上的角度</h2>
       <p>你点「记下角度」之后，最近最多 8 组数字（时间、膝、髋、躯干、侧面）会存在这台设备上。这些数字不上传。删除应用即可清除。</p>
       <h2>姿态识别组件</h2>
-      <p>关节位置由设备上的姿态识别组件计算。该组件的隐私清单声明：它可能为分析和功能收集设备标识、诊断数据、性能数据、产品交互和其他数据。这些数据不与你的身份关联，也不用于跨应用追踪。本应用不会把画面或角度交给该用途。</p>
+      <p>升级版本优先使用设备内的 YOLO26s-pose / Apple Core ML 计算关节位置；支持的设备还可使用 Apple Vision。Google ML Kit 作为后备识别组件。Google ML Kit 的隐私清单声明：它可能为分析和功能收集设备标识、诊断数据、性能数据、产品交互和其他数据。这些数据不与你的身份关联，也不用于跨应用追踪。本应用不会把画面或角度交给该用途。</p>
+      <p>Google 官方说明：ML Kit 可能联系 Google 服务器获取更新及兼容性信息，并发送 API 性能和使用指标。详见 <a href="https://developers.google.com/ml-kit/terms">Google ML Kit 条款与隐私</a>。摄像头画面和姿态结果不会因该 SDK 而上传。</p>
+      <p>IMTP 完整源码和许可证：<a href="https://github.com/lijing223344/IMTP">AGPL-3.0 开源项目</a>。第三方 SDK 保留各自条款。</p>
       <h2>不会做的事</h2>
       <p>本应用不出售个人信息，不投放广告，也不做跨应用追踪。</p>
       <h2>联系</h2>
@@ -41,7 +43,8 @@
       <p>The rear camera is used only to measure knee, hip, and trunk angles on this device. Frames are not saved and are not uploaded by this app.</p>
       <p>Motion data is used only to tell which way the phone is held, so trunk angle can be compared with vertical. It is not saved or uploaded.</p>
       <p>If you tap the record control, up to eight sets of numbers (time, knee, hip, trunk, side) stay on this device. They are not uploaded. Deleting the app removes them.</p>
-      <p>A pose component on the device finds the joints. Its privacy manifest says it may collect a device identifier, diagnostics, performance data, product interaction, and other data for analytics and functionality. That data is not linked to your identity and is not used for tracking. This app does not send frames or angles for that purpose.</p>
+      <p>The upgrade primarily uses on-device YOLO26s-pose / Apple Core ML to find joints, with Apple Vision available on supported devices and Google ML Kit as a fallback. Google ML Kit’s privacy manifest says it may collect a device identifier, diagnostics, performance data, product interaction, and other data for analytics and functionality. That data is not linked to your identity and is not used for tracking. This app does not send frames or angles for that purpose.</p>
+      <p>Google states that ML Kit may contact Google servers for updates and compatibility information and send API performance/utilization metrics. See <a href="https://developers.google.com/ml-kit/terms">Google ML Kit terms and privacy</a>. Input images and pose outputs stay on device. <a href="https://github.com/lijing223344/IMTP">Complete AGPL-3.0 application source</a> is available; third-party SDK terms remain separate.</p>
       <p>The app does not sell personal information, show ads, or track you across apps.</p>
       <p>Contact: <a href="mailto:2286098222@qq.com">2286098222@qq.com</a></p>
     </div>
